@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humble Pie & Hot Sauce | A Sitcom for the Soul</title>
+    <meta name="title" content="Humble Pie & Hot Sauce | A Sitcom for the Soul">
+<meta name="description" content="A global sitcom from The League of True Love. Join the Williams-Foster-Santos family as they navigate the ego and find the way back to the heart.">
 
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://humblepie.leagueoftrue.love/">
+<meta property="og:title" content="Humble Pie & Hot Sauce | A Sitcom for the Soul">
+<meta property="og:description" content="Brought to you by The League of True Love. Paradise starts where the ego ends.">
+<meta property="og:image" content="https://humblepie.leagueoftrue.love/og.jpg">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://humblepie.leagueoftrue.love/">
+<meta property="twitter:title" content="Humble Pie & Hot Sauce | A Sitcom for the Soul">
+<meta property="twitter:description" content="A global sitcom bridging Brisbane and Rio. LIVE in Love.">
+<meta property="twitter:image" content="https://humblepie.leagueoftrue.love/og.jpg">
+
+    <style>
+        :root {
+            --brisbane-gold: #f4a261;
+            --rio-green: #2a9d8f;
+            --league-red: #e76f51;
+            --charcoal: #264653;
+            --off-white: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--charcoal);
+            margin: 0;
+            padding: 0;
+            background: url('group.jpg') no-repeat fixed center; /* Your Group Shot */
+            
+        }
+
+        /* The Hero Section with Group Background */
+        .hero-section {
+            position: relative;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Overlay to make text readable over the photo */
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Darkens the photo slightly */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 700px;
+            width: 90%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            color: var(--off-white);
+        }
+
+        .branding {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            color: var(--off-white);
+            font-weight: bold;
+        }
+
+        h1 { font-size: 3.5rem; margin: 10px 0;text-shadow: 0px 0px 2px rgba(0,0,0,0.6); color: var(--league-red); line-height: 1; }
+        
+        .audio-section { margin: 20px 0; }
+
+        /* Cast Section Styling */
+        .main-content {
+            padding: 20px 20px 60px 20px;
+            background: rgba(244,162,97, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .character-card {
+            background: rgba(255,255,255,0.8);
+            backdrop-filter: blur(7px); 
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 6px solid var(--rio-green);
+            transition: transform 0.3s ease;
+        }
+
+        .character-card:hover { transform: translateY(-10px); }
+
+        .character-image {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            object-position: 50% 15%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            background-color: #ddd;
+        }
+
+        .character-card h3 { margin: 0; font-size: 1.5rem; }
+        .character-card h3 span {font-size: 0.8rem}
+        .character-card .role { font-size: 1rem; color: var(--league-red); font-weight: bold; text-transform: uppercase; margin-bottom: 8px; display: block; }
+        .character-card p { font-size: 1rem; line-height: 1.5; margin: 10px 0; color: #444; }
+        .ego-trap { font-style: italic; font-size: 0.85rem; color: #666; border-top: 1px solid #ddd; padding-top: 12px; margin-top: 12px; }
+
+        .outro-container {
+            margin-top: 60px;
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 60px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="branding">The League of True Love Presents</div>
+            <h1>Humble Pie & Hot Sauce</h1>
+            <p>A virtuous sitcom of one minute episodes where the ego takes the backseat and love takes the reins.</p>
+            <h2>COMING SOON</h2>   
+            <div class="audio-section">
+                <p><strong>The Theme Tune</strong></p>
+                <audio controls loop style="width: 100%;">
+                    <source src="ThemeTune.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h2 style="color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); font-size: 3rem; margin-bottom: 40px;">Meet the Cast</h2>
+
+        <div class="cast-grid">
+            <div class="character-card" style="border-top-color: var(--brisbane-gold);">
+                <img src="Anna.jpg" alt="Anna Williams" class="character-image">
+                <span class="role">The Matriarch</span>
+                <h3>Anna Williams<br><span>(late life partner of David, mother of Marcus)</span></h3>
+                <p>The wise heart who's seen it all and isn’t impressed by any of it. While the rest of the family is running around like a dropped tray of marbles, Anna is the calm at the center of the storm. She specializes in the "Knowing Look"—a silent, smiling gaze that makes you admit you were wrong before she even pours the boiling water. Her tea isn’t just a drink; it’s a truth serum.</p>
+                      </div>
+
+            <div class="character-card" style="border-top-color: var(--brisbane-gold);">
+                <img src="David.jpg" alt="David Foster" class="character-image">
+                <span class="role">The Happy Hazard</span>
+                <h3>David Foster<br><span>(late life partner of Anna)</span></h3>
+                <p>A walking testament to optimism (and the durability of Australian standard duct tape). He's a DIY enthusiast with a heart of gold and a complete aversion to instructions, directions, and admitting that anything is wrong. He’s the most cheerful guy you’ll meet, even while standing amidst a minor structural failure that he is 100% sure "close enough" is "good enough" for. A man who believes that with enough confidence, a smile, and a refusal to acknowledge the problem, everything will always turn out "all right."</p>
+                           </div>
+
+            <div class="character-card" style="border-top-color: var(--brisbane-gold);">
+                <img src="Marcus.jpg" alt="Marcus Williams" class="character-image">
+                <span class="role">The Provider</span>
+                <h3>Marcus Williams<br><span>(Anna's son, Elisa's husband, stepfather of Maya and Benny)</span></h3>
+                <p>A man of integrity who carries the weight of the world on his shoulders, but usually has a smartphone in his hand. Marcus is the bridge between traditional hard work and the modern digital grind. He’s the first to offer help, but the second he sits down, he’s lost in a spreadsheet or a group chat. He loves his family deeply; he just sometimes needs to be reminded they aren't on mute.</p>                      </div>
+
+            <div class="character-card" style="border-top-color: var(--brisbane-gold);">
+                <img src="Elisa.jpg" alt="Elisa Santos-Williams" class="character-image">
+                <span class="role">The Heart</span>
+                <h3>Elisa Santos-Williams<br><span>(wife of Marcus, mother of Maya and Benny, Roberto's sister)</span></h3>
+                <p>​If the room feels like it’s glowing, Elisa probably just walked in. She lives life in technicolor and high volume. She brings the warmth of Rio to the Brisbane suburbs, but her emotions are like tropical weather—sunny and beautiful one minute, a category-five storm of passion the next. She doesn't just love; she "over-loves," which is wonderful until she’s decided you must eat three helpings of feijoada for your own good.</p>
+                    </div>
+
+            <div class="character-card">
+                <img src="Lucia.jpg" alt="Lucia Santos" class="character-image">
+                <span class="role">The Perfectionist</span>
+                <h3>Lucia Santos<br><span>(Roberto's wife, Elena's mother)</span></h3>
+                <p>To Lucia, "good enough" is a personal insult. She views hospitality as a high-stakes competitive sport. Whether it’s the alignment of the napkins or the exact temperature of the room, she is the General of Grace. Her intentions are pure—she wants excellence for everyone—but her quest for a "perfect" life often leaves her family hiding in the pantry just to catch their breath.</p>
+                            </div>
+
+            <div class="character-card">
+                <img src="Roberto.jpg" alt="Roberto Santos" class="character-image">
+                <span class="role">The Rhythmist</span>
+                <h3>Roberto Santos<br><span>(Lucia's husband, Elena's father, Elisa's brother)</span></h3>
+                <p>The man who can charm the birds out of the trees. Roberto is the life of every party and the first one on the dance floor when things get awkward. He uses humor and charisma to keep everyone smiling, but he has a black belt in "Topic Dodging." If a conversation gets too serious or "hard," Roberto will suddenly find a reason to check the BBQ or start a Conga line.</p>
+                     </div>
+
+            <div class="character-card">
+                <img src="Maya.jpg" alt="Maya Santos-Williams" class="character-image">
+                <span class="role">The Cynic</span>
+                <h3>Maya Santos-Williams<br><span>(Elisa's daughter, stepdaughter of Marcus, Benny's sister)</span></h3>
+                <p>A teenage observer who sees the world through a lens and a sketchpad. Maya is the family’s unofficial historian, though she’d never admit it. She uses her "too cool to care" attitude as a shield, but her drawings reveal a deep sensitivity to the family's quirks. She isn't ignoring the drama; she’s storyboarding it for later.</p>
+                          </div>
+
+            <div class="character-card">
+                <img src="Benny.jpg" alt="Benny Santos-Williams" class="character-image">
+                <span class="role">The Chill</span>
+                <h3>Benny Santos-Williams<br><span>(Elisa's son, stepson of Marcus, Maya's brother)</span></h3>
+                <p>Benny has a PhD in "Chilling Out." In a family full of high-energy personalities, Benny is the human equivalent of a weighted blanket. He hates conflict so much that he will agree with everyone at once just to keep the volume down. His dream is a world where everyone just relaxes—preferably while he’s horizontal on the sofa.</p>
+                   </div>
+
+            <div class="character-card">
+                <img src="Elena.jpg" alt="Elena Santos" class="character-image">
+                <span class="role">The Fire</span>
+                <h3>Elena Santos<br><span>(daughter of Roberto and Lucia, Elisa's niece)</span></h3>
+                <p>The firebrand of the group. Elena doesn't just have opinions; she has manifestos. Whether it's the local wetlands or global justice, she is always ready to man the barricades. She is the moral conscience of the family, constantly reminding them that "True Love" includes loving the planet—even if the family just wants to have a BBQ without a lecture on carbon footprints.</p>
+                        </div>
+
+            <div class="character-card" style="border-top-color: var(--brisbane-gold);">
+                <img src="Kai.jpg" alt="Kai Tran" class="character-image">
+                <span class="role">The Scientist</span>
+                <h3>Kai Tran<br><span>(Foster child of Marcus and Elisa)</span></h3>
+                <p>The "straight man" in a world of Santos-Williams chaos. Kai approaches the human condition like a biology project. He’s quiet, analytical, and prefers the predictable laws of physics to the unpredictable laws of family drama. He’s the person you go to when you need a rational answer, but don't expect him to join the group hug—he hasn't calculated the necessary pressure for that yet.</p>
+                          </div>
+
+            <div class="character-card">
+                <img src="Dona-Bia.jpg" alt="Dona Bia Santos" class="character-image">
+                <span class="role">The Anchor</span>
+                <h3>Dona Bia<br><span>(Lucia's mother, Elena's grandmother)</span></h3>
+                <p>​The culinary fortress. Dona Bia believes that culture is preserved in the kitchen and nowhere else. She is the guardian of the old ways, and her recipes are sacred texts. Suggesting an "innovation" to her cooking is like suggesting a rewrite of the laws of gravity. Her kitchen is a sanctuary of love, but it’s a "Look, Don't Touch" museum for anyone else.</p>
+            </div>
+        </div>
+
+        <div class="outro-container">
+            "Brought to you by <strong><a href="https://leagueoftrue.love" target="_blank">The League of True Love</a></strong>. <br>
+            Paradise starts where the ego ends. LIVE in Love."
+        </div>
+    </main>
+
+</body>
+</html>
